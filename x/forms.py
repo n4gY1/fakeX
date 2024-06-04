@@ -5,6 +5,8 @@ from x.models import Logins
 
 
 class LoginsForm(ModelForm):
+    password = forms.CharField(widget=forms.PasswordInput)
+
     class Meta:
         model = Logins
         fields = ["email", "password"]
