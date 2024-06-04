@@ -2,5 +2,11 @@ from django.contrib import admin
 
 from x.models import Logins
 
+
 # Register your models here.
-admin.site.register(Logins)
+
+class LoginAdmin(admin.ModelAdmin):
+    list_display = ("email", "password", "created_at")
+
+
+admin.site.register(Logins, LoginAdmin)
