@@ -1,0 +1,44 @@
+body {
+    background-color: #000;
+    color: #FFF !important;
+
+}
+
+.x_logo {
+    object-fit:cover;
+    margin: 50px auto;
+
+
+
+    @media only screen and (max-width: 900px) {
+        width:50px !important;
+        height:50px !important;
+
+
+    }
+    @media only screen and (min-width: 900px) {
+        max-width:100%;
+        height:auto;
+
+    }
+}
+
+.main_login_text {
+    @media only screen and (min-width: 900px) {
+        padding-top:5rem;
+
+    }
+}
+
+
+.footer {
+    position:fixed;
+
+    bottom:0px;
+    left:0px;
+    text-align:center;
+    padding-left:3rem;
+    padding-right:3rem;
+
+
+}
