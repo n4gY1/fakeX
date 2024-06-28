@@ -2,13 +2,14 @@ body {
     background-color: #000;
     color: #FFF !important;
 
-}
 
+}
+.main {
+    min-height:90vh;
+}
 .x_logo {
     object-fit:cover;
     margin: 50px auto;
-
-
 
     @media only screen and (max-width: 900px) {
         width:50px !important;
@@ -32,10 +33,7 @@ body {
 
 
 .footer {
-    position:fixed;
 
-    bottom:0px;
-    left:0px;
     text-align:center;
     padding-left:3rem;
     padding-right:3rem;
