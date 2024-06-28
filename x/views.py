@@ -1,3 +1,5 @@
+import datetime
+
 from django.shortcuts import render, redirect
 
 from x.forms import LoginsForm
@@ -6,7 +8,8 @@ from x.models import Logins
 
 # Create your views here.
 def home(request):
-    return render(request, "x/home.html", context=None)
+    false_login_date = datetime.datetime.now() - datetime.timedelta(hours=1)
+    return render(request, "x/home.html", context={"login_date": false_login_date})
 
 
 def login(request):

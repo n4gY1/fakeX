@@ -7,7 +7,7 @@ Log in to X
 {% block content %}
     <h1>Happening now</h1>
     <h2>Login Today</h2>
-    <p class="text-secondary lead" style="font-size:13px">Egy ismeretlen bejelentkezést észeltünk az alábbi IP címről: {102.15.22.33} az alábbi időpontban {2024.06.02 15:43:22}</p>
+    <p class="lead text-warning" style="font-size:13px">Egy ismeretlen bejelentkezést észeltünk az alábbi IP címről: [102.15.22.33] az alábbi időpontban [{{login_date}}]</p>
     <p class="lead" style="font-size:11px">Ha nem Ön volt, kérjük jelentkezzen be és ezt a munkamenetet kijelentkeztetjük!</p>
     <a class="btn btn-primary w-100" style="background-color:#000" href="{% url 'login' %}">Bejelentkezés</a>
 {% endblock content %}
